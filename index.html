@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Preview Card - By Malxcon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <main
+      class="flex flex-col justify-center items-center h-screen bg-primary-Cream">
+      <div class="px-5 pt-8 sm:flex sm:w-[800px] h-full">
+        <picture>
+          <source
+            media="(max-width: 650px)"
+            srcset="./images/image-product-mobile.jpg" />
+          <source
+            media="(min-width: 651px)"
+            srcset="./images/image-product-desktop.jpg" />
+          <img
+            class="rounded-2xl sm:rounded-r-none"
+            src="./images/image-product-desktop.jpg"
+            alt="Perfume" />
+        </picture>
+
+        <div class="py-8 pl-8 pr-20 bg-white rounded-r-2xl sm:w-[700px]">
+          <h2
+            class="font-monserrat tracking-ancho uppercase text-neutral-DarkGrayishBlue font-medium mb-4">
+            Perfume
+          </h2>
+          <h2
+            class="font-extrabold font-fraunces text-neutral-VeryDarkBlue text-5xl mb-4">
+            Gabrielle Essence Eau De Parfum
+          </h2>
+          <p
+            class="text-neutral-DarkGrayishBlue font-medium mb-7 font-monserrat">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="mb-5 flex items-center mb-4">
+            <p class="text-primary-DarkCyan font-bold font-fraunces text-3xl">
+              $149.99
+            </p>
+            <p class="text-neutral-DarkGrayishBlue line-through text-sm ml-5">
+              $169.99
+            </p>
+          </div>
+          <div
+            class="bg-primary-DarkCyan text-white flex items-center justify-center rounded-xl py-4 font-bold font-monserrat hover:bg-primary-DarkCyanhover">
+            <img
+              class="w-5 h-5 mr-3"
+              src="./images/icon-cart.svg"
+              alt="" /><button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
